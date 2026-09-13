@@ -1,0 +1,1 @@
+{% extends 'attendance/base.html' %}{% block content %}<div class="login"><div class="card"><div class="logo">🎓</div><h1>Student Attendance</h1><p>College Mini Project</p><form method="post">{% csrf_token %}{{ form.as_p }}<button class="primary">Login</button></form><small>Admin: Django superuser · Teacher/Student: created accounts</small></div></div>{% endblock %}
