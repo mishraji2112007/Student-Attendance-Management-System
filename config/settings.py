@@ -1,11 +1,14 @@
 from pathlib import Path
 BASE_DIR=Path(__file__).resolve().parent.parent
 SECRET_KEY='django-insecure-student-attendance-mini-project-change-me'
-DEBUG=True
+DEBUG = True
+
 ALLOWED_HOSTS = [
-    "student-attendance-management-syste-rouge.vercel.app",
-    "localhost",
-    "127.0.0.1",
+    "*",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.vercel.app",
 ]
 INSTALLED_APPS=['django.contrib.admin','django.contrib.auth','django.contrib.contenttypes','django.contrib.sessions','django.contrib.messages','django.contrib.staticfiles','attendance']
 MIDDLEWARE = [
